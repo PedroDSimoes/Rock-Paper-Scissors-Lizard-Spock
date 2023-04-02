@@ -1,0 +1,246 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a89f9f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Form container styles */
+  
+  #form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Game container styles */
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-bottom: 10rem;
+    font-size: 2rem; /* set the font size */
+    font-weight: bold; /* set the font weight to bold */
+    color: #07145f; /* set the font color */
+    text-align: center; /* center the text */
+    text-transform: uppercase; /* convert the text to uppercase */
+    letter-spacing: 2px; /* add some letter spacing */
+    line-height: 1.2; /* set the line height */
+  }
+
+  h2 {
+    margin-bottom: 10rem;
+    font-size: 1.8rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 5rem;
+  }
+  
+  button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: #608e20;
+    font-size: 1.2rem;
+  }
+  
+  #player-hand,
+  #computer-hand {
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+
+.hand-emoji.animate {
+  animation: shake 3s ease-in-out;
+}
+
+#emoji-container {
+    display: flex;
+    margin-top: 8rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+}
+
+
+@keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    30% {
+      transform: rotate(10deg) scale(1.1);
+    }
+    45% {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    60% {
+      transform: rotate(10deg) scale(1.1);
+    }
+    75% {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    90% {
+      transform: rotate(10deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    h1 {
+        margin: 0 auto;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    button {
+        margin: 1rem auto;
+        display: flex;
+      }
+
+      #emoji-container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    #player-hand,
+  #computer-hand {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+  }
+
+  p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  #form-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+    
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 750px) {
+
+    h1 {
+        margin: 0 1rem;
+        margin-bottom: 5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    button {
+        margin: 1rem auto;
+        display: flex;
+      }
+
+      #emoji-container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    #player-hand,
+  #computer-hand {
+    font-size: 3.5rem;
+    margin-right: 2rem;
+  }
+
+  p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  #form-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  }
